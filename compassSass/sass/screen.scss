@@ -1,0 +1,79 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$width : 500px;
+$paddingNum: 20px;
+$pinfeed: 24px;
+
+
+
+body {
+  background: #F2F2F2;
+  font-family: arial, "Microsoft YaHei";
+}
+header {
+  width: $width;
+  line-height: 200%;
+  margin: 0 auto;
+  font-size: 225%;
+  font-weight: bold;
+  text-align: center;
+}
+
+section {
+  width: $width;
+  margin: 0 auto;
+  padding: $paddingNum;
+  background-color: #FFF;
+}
+
+.in-text {
+  p {
+    margin-left: $pinfeed;
+  }
+  .text-box {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    font-size: 200%;
+    text-indent: .5em;
+    outline: none;
+  }
+}
+
+.check-box {
+  float: left;
+}
+
+ul.list {
+  li {
+    position: relative;
+    line-height: 100%;
+    padding: $paddingNum 0;
+    font-size: 150%;
+    border-bottom: 1px solid #CCC;
+    overflow: hidden;
+
+    p {
+      word-break: break-all;
+      margin: 0 $pinfeed;
+    }
+    a {
+      position: absolute;
+      top: 30%;
+      right: 0;
+      z-index: 1;
+      font-size: 100%;
+      color: #000;
+      text-decoration: none;
+    }
+  }
+}
+
+footer{
+  @extend header;
+}
